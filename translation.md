@@ -11,7 +11,7 @@ creating a mirror of <https://github.com/pietroppeter/wordle-it>
   - [ ] If the language is written right-to-left, add `dir="rtl"` to the HTML tag
 - [ ] Update the name and short name in [public/manifest.json](public/manifest.json)
 - [ ] Update the strings in [src/constants/strings.ts](src/constants/strings.ts)
-- [ ] Add all of the five letter words in the language to [src/constants/validGuesses.ts](src/constants/validGuesses.ts), replacing the English words
+- [x] Add all of the five letter words in the language to [src/constants/validGuesses.ts](src/constants/validGuesses.ts), replacing the English words
 - [ ] Add a list of goal words in the language to [src/constants/wordlist.ts](src/constants/wordlist.ts), replacing the English words
 - [ ] Update the "Settings" modal in [src/components/modals/SettingsModal.tsx](src/components/modals/SettingsModal.tsx)
 - [ ] Update the "Info" modal in [src/components/modals/InfoModal.tsx](src/components/modals/InfoModal.tsx)
