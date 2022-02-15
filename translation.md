@@ -24,4 +24,8 @@ additional actions:
 - [ ] build and deploy in docs folder (with github pages)
   - [x] `npm run build`
   - [x] manually copy only the need files
-  - [ ] activate github pages
+  - [x] activate github pages
+  - [x] had to manually make sure path for css and js is relative as in `static/...` and not `/static/...` to make it work
+  - [ ] some script to automate copying and renaming of files
+  - [ ] is it possible to avoid the need to use relative path?
+    should I use a PUBLIC_URL?
