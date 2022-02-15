@@ -4,6 +4,7 @@ creating a mirror of <https://github.com/pietroppeter/wordle-it>
 
 - [x] In [.env](.env):
   - [x] Update the title and the description
+  - [x] Add plausible domain
 - [ ] In [public/index.html](public/index.html):
   - [ ] Update the "You need to enable JavaScript" message
   - [ ] Update the language attribute in the HTML tag
