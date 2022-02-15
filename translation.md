@@ -21,3 +21,7 @@ creating a mirror of <https://github.com/pietroppeter/wordle-it>
 
 additional actions:
 - [x] change Date value for `epochMs` in [src/lib/words.ts](src/lib/words.ts)
+- [ ] build and deploy in docs folder (with github pages)
+  - [x] `npm run build`
+  - [x] manually copy only the need files
+  - [ ] activate github pages
