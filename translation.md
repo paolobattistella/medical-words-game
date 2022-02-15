@@ -5,9 +5,9 @@ creating a mirror of <https://github.com/pietroppeter/wordle-it>
 - [x] In [.env](.env):
   - [x] Update the title and the description
   - [x] Add plausible domain
-- [ ] In [public/index.html](public/index.html):
-  - [ ] Update the "You need to enable JavaScript" message
-  - [ ] Update the language attribute in the HTML tag
+- [x] In [public/index.html](public/index.html):
+  - [x] Update the "You need to enable JavaScript" message
+  - [x] Update the language attribute in the HTML tag
 - [ ] Update the name and short name in [public/manifest.json](public/manifest.json)
 - [ ] Update the strings in [src/constants/strings.ts](src/constants/strings.ts)
 - [x] Add all of the five letter words in the language to [src/constants/validGuesses.ts](src/constants/validGuesses.ts), replacing the English words
