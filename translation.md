@@ -27,5 +27,5 @@ additional actions:
     should I use a PUBLIC_URL?
   - [ ] update again after completing translation
 - [x] use images and manifest.json from [pietroppeter/wordle-it](https://github.com/pietroppeter/wordle-it)
-- [ ] add also open graph stuff in html?
+- [x] add also open graph fields in index.html (FB meta tags)
 - [x] use favicon from wordle
