@@ -35,7 +35,7 @@ export const SettingsModal = ({
           handleFlag={handleHardMode}
         />
         <SettingsToggle
-          settingName="Tema nero"
+          settingName="Tema scuro"
           flag={isDarkMode}
           handleFlag={handleDarkMode}
         />
