@@ -13,7 +13,7 @@ creating a mirror of <https://github.com/pietroppeter/wordle-it>
 - [x] Add all of the five letter words in the language to [src/constants/validGuesses.ts](src/constants/validGuesses.ts), replacing the English words
 - [x] Add a list of goal words in the language to [src/constants/wordlist.ts](src/constants/wordlist.ts), replacing the English words
 - [x] Update the "Settings" modal in [src/components/modals/SettingsModal.tsx](src/components/modals/SettingsModal.tsx)
-- [ ] Update the "Info" modal in [src/components/modals/InfoModal.tsx](src/components/modals/InfoModal.tsx)
+- [x] Update the "Info" modal in [src/components/modals/InfoModal.tsx](src/components/modals/InfoModal.tsx)
 
 additional actions:
 - [x] change Date value for `epochMs` in [src/lib/words.ts](src/lib/words.ts)
@@ -25,7 +25,8 @@ additional actions:
   - [ ] some script to automate copying and renaming of files
   - [ ] is it possible to avoid the need to use relative path?
     should I use a PUBLIC_URL?
-  - [ ] update again after completing translation
+  - [x] update again after completing translation
+  - [ ] I should pass to vercel or netlify
 - [x] use images and manifest.json from [pietroppeter/wordle-it](https://github.com/pietroppeter/wordle-it)
 - [x] add also open graph fields in index.html (FB meta tags)
 - [x] use favicon from wordle
