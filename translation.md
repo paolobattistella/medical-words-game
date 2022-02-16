@@ -25,3 +25,5 @@ additional actions:
   - [ ] some script to automate copying and renaming of files
   - [ ] is it possible to avoid the need to use relative path?
     should I use a PUBLIC_URL?
+- [x] use images and manifest.json from [pietroppeter/wordle-it](https://github.com/pietroppeter/wordle-it)
+- [ ] add also open graph stuff in html?
