@@ -8,54 +8,54 @@ type Props = {
 
 export const InfoModal = ({ isOpen, handleClose }: Props) => {
   return (
-    <BaseModal title="How to play" isOpen={isOpen} handleClose={handleClose}>
+    <BaseModal title="Come giocare" isOpen={isOpen} handleClose={handleClose}>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        Guess the word in 6 tries. After each guess, the color of the tiles will
-        change to show how close your guess was to the word.
+        Indovina una parola di 5 lettere in 6 tentativi.
+      </p>
+      <p className="text-sm text-gray-500 dark:text-gray-300">
+        Dopo ogni tentativo, i colori delle tessere cambiano
+        per mostrarti quanto ci sei andato vicino.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
-        <Cell value="W" status="correct" />
-        <Cell value="E" />
+        <Cell value="B" status="correct" />
+        <Cell value="U" />
+        <Cell value="F" />
+        <Cell value="F" />
         <Cell value="A" />
-        <Cell value="R" />
-        <Cell value="Y" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter W is in the word and in the correct spot.
+        La lettera B è nella parola ed è nel posto giusto.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
-        <Cell value="P" />
-        <Cell value="I" />
-        <Cell value="L" status="present" />
-        <Cell value="O" />
+        <Cell value="C" />
+        <Cell value="A" />
+        <Cell value="N" status="present" />
         <Cell value="T" />
+        <Cell value="A" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter L is in the word but in the wrong spot.
+        La lettera N è nella parola ma nel posto sbagliato
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
-        <Cell value="V" />
+        <Cell value="M" />
         <Cell value="A" />
         <Cell value="G" />
-        <Cell value="U" status="absent" />
-        <Cell value="E" />
+        <Cell value="H" status="absent" />
+        <Cell value="I" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter U is not in the word in any spot.
+        La lettera H non è nella parola.
       </p>
-
+      <p className="mt-6 text-sm text-gray-500 dark:text-gray-300">
+        Ogni giorno c'è una nuova parola da indovinare, la stessa per tutti.
+      </p>
+        
       <p className="mt-6 italic text-sm text-gray-500 dark:text-gray-300">
-        This is an open source version of the word guessing game we all know and
-        love -{' '}
-        <a
-          href="https://github.com/cwackerfuss/react-wordle"
-          className="underline font-bold"
-        >
-          check out the code here
-        </a>{' '}
+        Questa è una versione italiana ed open source (<a href="https://github.com/par-le/react-wordle" className="underline">qui il codice</a>)
+        del gioco in inglese <a href="https://www.nytimes.com/games/wordle/index.html" className="underline font-bold">Wordle</a>
       </p>
     </BaseModal>
   )
