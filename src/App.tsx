@@ -10,6 +10,7 @@ import { Keyboard } from './components/keyboard/Keyboard'
 import { InfoModal } from './components/modals/InfoModal'
 import { StatsModal } from './components/modals/StatsModal'
 import { SettingsModal } from './components/modals/SettingsModal'
+import { SocialFollow } from './components/social/SocialFollow'
 import {
   GAME_TITLE,
   WIN_MESSAGES,
@@ -236,22 +237,47 @@ function App() {
 
   return (
     <div className="pt-2 pb-8 max-w-7xl mx-auto sm:px-6 lg:px-8">
-      <div className="flex w-80 mx-auto items-center mb-8 mt-20">
+      <div className="flex w-80 mx-auto items-center mb-2 mt-2">
         <h1 className="text-xl ml-2.5 grow font-bold dark:text-white">
           {GAME_TITLE}
         </h1>
-        <InformationCircleIcon
-          className="h-6 w-6 mr-2 cursor-pointer dark:stroke-white"
-          onClick={() => setIsInfoModalOpen(true)}
-        />
-        <ChartBarIcon
-          className="h-6 w-6 mr-3 cursor-pointer dark:stroke-white"
-          onClick={() => setIsStatsModalOpen(true)}
-        />
-        <CogIcon
-          className="h-6 w-6 mr-3 cursor-pointer dark:stroke-white"
-          onClick={() => setIsSettingsModalOpen(true)}
-        />
+      </div>
+
+      <Alert message={NOT_ENOUGH_LETTERS_MESSAGE} isOpen={isNotEnoughLetters} />
+      <Alert
+        message={WORD_NOT_FOUND_MESSAGE}
+        isOpen={isWordNotFoundAlertOpen}
+      />
+      <Alert message={missingLetterMessage} isOpen={isMissingPreviousLetters} />
+      <Alert
+        message={CORRECT_WORD_MESSAGE(solution)}
+        isOpen={isGameLost && !isRevealing}
+      />
+      <Alert
+        message={successAlert}
+        isOpen={successAlert !== ''}
+        variant="success"
+        topMost={true}
+      />
+
+      <div className="flex w-80 mx-auto items-center mb-8 mt-8">
+        <div className="w-1/2">
+          <SocialFollow />
+        </div>
+        <div className="w-1/2 text-right">
+          <InformationCircleIcon
+            className="h-6 w-6 ml-2 inline cursor-pointer dark:stroke-white"
+            onClick={() => setIsInfoModalOpen(true)}
+          />
+          <ChartBarIcon
+            className="h-6 w-6 ml-3 inline cursor-pointer dark:stroke-white"
+            onClick={() => setIsStatsModalOpen(true)}
+          />
+          <CogIcon
+            className="h-6 w-6 ml-3 inline cursor-pointer dark:stroke-white"
+            onClick={() => setIsSettingsModalOpen(true)}
+          />
+        </div>
       </div>
       <Grid
         guesses={guesses}
@@ -293,23 +319,6 @@ function App() {
         isHardModeErrorModalOpen={isHardModeAlertOpen}
         isHighContrastMode={isHighContrastMode}
         handleHighContrastMode={handleHighContrastMode}
-      />
-
-      <Alert message={NOT_ENOUGH_LETTERS_MESSAGE} isOpen={isNotEnoughLetters} />
-      <Alert
-        message={WORD_NOT_FOUND_MESSAGE}
-        isOpen={isWordNotFoundAlertOpen}
-      />
-      <Alert message={missingLetterMessage} isOpen={isMissingPreviousLetters} />
-      <Alert
-        message={CORRECT_WORD_MESSAGE(solution)}
-        isOpen={isGameLost && !isRevealing}
-      />
-      <Alert
-        message={successAlert}
-        isOpen={successAlert !== ''}
-        variant="success"
-        topMost={true}
       />
     </div>
   )
