@@ -39,6 +39,7 @@ import {
   setStoredIsHighContrastMode,
   getStoredIsHighContrastMode,
 } from './lib/localStorage'
+import logo from './images/medical_words.png'
 
 import './App.css'
 
@@ -237,28 +238,22 @@ function App() {
 
   return (
     <div className="pt-2 pb-8 max-w-7xl mx-auto sm:px-6 lg:px-8">
-      <div className="flex w-80 mx-auto items-center mb-2 mt-2">
-        <h1 className="text-xl ml-2.5 grow font-bold dark:text-white">
-          {GAME_TITLE}
-        </h1>
+      <div className="w-96 mx-auto items-center mb-2 mt-2">
+        <img src={logo} alt={GAME_TITLE} />
       </div>
 
-      <Alert message={NOT_ENOUGH_LETTERS_MESSAGE} isOpen={isNotEnoughLetters} />
-      <Alert
-        message={WORD_NOT_FOUND_MESSAGE}
-        isOpen={isWordNotFoundAlertOpen}
-      />
-      <Alert message={missingLetterMessage} isOpen={isMissingPreviousLetters} />
-      <Alert
-        message={CORRECT_WORD_MESSAGE(solution)}
-        isOpen={isGameLost && !isRevealing}
-      />
-      <Alert
-        message={successAlert}
-        isOpen={successAlert !== ''}
-        variant="success"
-        topMost={true}
-      />
+      <div className="w-80 mx-auto text-center text-sm mb-2 mt-2 dark:text-white">
+        <p>
+          Powered by{' '}
+          <a
+            href="https://womeninsurgeryitalia.it/"
+            className="underline font-bold"
+            target="_blank"
+          >
+            Women in Surgery Italia
+          </a>
+        </p>
+      </div>
 
       <div className="flex w-80 mx-auto items-center mb-8 mt-8">
         <div className="w-1/2">
@@ -319,6 +314,23 @@ function App() {
         isHardModeErrorModalOpen={isHardModeAlertOpen}
         isHighContrastMode={isHighContrastMode}
         handleHighContrastMode={handleHighContrastMode}
+      />
+
+      <Alert message={NOT_ENOUGH_LETTERS_MESSAGE} isOpen={isNotEnoughLetters} />
+      <Alert
+        message={WORD_NOT_FOUND_MESSAGE}
+        isOpen={isWordNotFoundAlertOpen}
+      />
+      <Alert message={missingLetterMessage} isOpen={isMissingPreviousLetters} />
+      <Alert
+        message={CORRECT_WORD_MESSAGE(solution)}
+        isOpen={isGameLost && !isRevealing}
+      />
+      <Alert
+        message={successAlert}
+        isOpen={successAlert !== ''}
+        variant="success"
+        topMost={true}
       />
     </div>
   )
