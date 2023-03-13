@@ -58,9 +58,9 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
       </p>
 
       <p className="mt-4 italic text-sm text-gray-500 dark:text-gray-300">
-        Medical Words è una versione personalizzata per <a href="https://womeninsurgeryitalia.it/" className="underline font-bold" target="_blank">Women in Surgery Italia</a>&nbsp;
-        ed <a href="https://github.com/par-le/react-wordle" className="underline" target="_blank">open source</a> del gioco
-        in inglese <a href="https://www.nytimes.com/games/wordle/index.html" className="underline font-bold" target="_blank">Wordle</a>
+        Medical Words è una versione personalizzata per <a href="https://womeninsurgeryitalia.it/" className="underline font-bold" target="_blank" rel="noreferrer">Women in Surgery Italia</a>&nbsp;
+        ed <a href="https://github.com/par-le/react-wordle" className="underline" target="_blank" rel="noreferrer">open source</a> del gioco
+        in inglese <a href="https://www.nytimes.com/games/wordle/index.html" className="underline font-bold" target="_blank" rel="noreferrer">Wordle</a>
       </p>
 
       <p className="mt-4 italic text-sm text-gray-500 dark:text-gray-300">

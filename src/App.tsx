@@ -250,6 +250,7 @@ function App() {
             href="https://womeninsurgeryitalia.it/"
             className="underline font-bold"
             target="_blank"
+            rel="noreferrer"
           >
             Women in Surgery Italia
           </a>
