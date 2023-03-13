@@ -6,9 +6,8 @@ import {
   faTwitter,
   faInstagram
 } from "@fortawesome/free-brands-svg-icons";
-import classNames from 'classnames'
 
-export const SocialFollow = ({}) => {
+export const SocialFollow = () => {
 
     return (
       <div className="social-container">
